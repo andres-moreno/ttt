@@ -10,9 +10,11 @@
              (fibers promises)
              (fibers timers))
 
-(define-foreign console-log
-  "core" "log"
-  (ref string) -> (ref null extern))
+;; (define-foreign console-log
+;;   "core" "log"
+;;   (ref string) -> (ref null extern))
+
+(define-foreign console-log "core" "log" (ref string) -> none)
 
 ;; (ice-9 q)
 
